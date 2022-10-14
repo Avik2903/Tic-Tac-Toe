@@ -5,8 +5,6 @@ from functools import partial
 from tkinter import messagebox
 from copy import deepcopy
 sign = 0
-
-# Creates an empty board
 global board
 board = [[" " for x in range(3)] for y in range(3)]
 
