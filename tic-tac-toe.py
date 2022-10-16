@@ -7,9 +7,6 @@ from copy import deepcopy
 sign = 0
 global board
 board = [[" " for x in range(3)] for y in range(3)]
-
-# Check l(O/X) won the match or not
-# according to the rules of the game
 def winner(b, l):
 	return ((b[0][0] == l and b[0][1] == l and b[0][2] == l) or
 			(b[1][0] == l and b[1][1] == l and b[1][2] == l) or
@@ -19,8 +16,6 @@ def winner(b, l):
 			(b[0][2] == l and b[1][2] == l and b[2][2] == l) or
 			(b[0][0] == l and b[1][1] == l and b[2][2] == l) or
 			(b[0][2] == l and b[1][1] == l and b[2][0] == l))
-
-# Configure text on button while playing with another player
 def get_text(i, j, gb, l1, l2):
 	global sign
 	if board[i][j] == ' ':
