@@ -38,8 +38,6 @@ def get_text(i, j, gb, l1, l2):
 	elif(isfull()):
 		gb.destroy()
 		box = messagebox.showinfo("Tie Game", "Tie Game")
-
-# Check if the player can push the button or not
 def isfree(i, j):
 	return board[i][j] == " "
 def isfull():
